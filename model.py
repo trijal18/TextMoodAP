@@ -15,7 +15,7 @@ def analyze_sentiment(review_text):
                 "content": (
                         f"Analyze the sentiment of the following review: '{str(review_text)}'. "
                         "Provide sentiment scores for positive, negative, and neutral in the following strict JSON format "
-                        "without any extra text, explanations, or additional comments:\n\n"
+                        "without any extra text, explanations, or additional comments simply give ajson response no extra text, keep the total score to be 1:\n\n"
                         "{\"positive\": score, \"negative\": score, \"neutral\": score}"
                     )
             }
@@ -24,11 +24,11 @@ def analyze_sentiment(review_text):
     )
 
     response = chat_completion.choices[0].message.content.strip()
-    return response
+    return json.loads(response)
 
 
 
 # Example usage:
-review_text = ["bad","good","very good, love ir"]
-sentiment_result = analyze_sentiment(review_text)
-print(sentiment_result)
+# review_text = ["bad","good","very good, love it"]
+# sentiment_result = analyze_sentiment(review_text)
+# print(sentiment_result)
