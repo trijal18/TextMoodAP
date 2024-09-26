@@ -20,10 +20,12 @@ def read_reviews(file_path):
     # reviews_list=[]
     # for review in df['Review']:
     #     reviews_list.append(review)
-    print(type(reviews_list))
+    
     sentiments=analyze_sentiment(reviews_list)
-    print(type(sentiments))
+    # print(type(sentiments))
     return sentiments
+
+
 # Example usage (assuming a valid file_path object):
-file_path = r"C:\Users\admin\Downloads\customer_reviews.xlsx"  # Obtain the file path from the user or a web form
-print(read_reviews(file_path))
+# file_path = r"C:\Users\admin\Downloads\customer_reviews.xlsx"  # Obtain the file path from the user or a web form
+# print(read_reviews(file_path))
