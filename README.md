@@ -25,7 +25,7 @@ This project provides a Flask API for uploading `.xlsx` and `.csv` files contain
 
     ```bash
     git clone https://github.com/trijal18/TextMoodAPI.git
-    cd sentiment-analysis-api
+    cd TextMoodAPI
     ```
 
 2. **Create a Virtual Environment** (optional but recommended):
