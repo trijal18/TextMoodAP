@@ -72,9 +72,9 @@ This project provides a Flask API for uploading `.xlsx` and `.csv` files contain
 - **Success (200)**:  
     ```json
     {
-        "negative": \`score\`,
-        "neutral": \`score\`,
-        "positive": \`score\`
+        "negative": score,
+        "neutral": score,
+        "positive": score
     }
     
 - **Error (400)**:  
