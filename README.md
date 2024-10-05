@@ -70,13 +70,13 @@ This project provides a Flask API for uploading `.xlsx` and `.csv` files contain
 
 #### Response:
 - **Success (200)**:  
-    ```json
+    
     {
-        "negative":  score,
-        "neutral":  score,
-        "positive":  score
+        "negative": score,
+        "neutral": score,
+        "positive": score
     }
-    ```
+    
 - **Error (400)**:  
     ```json
     {
