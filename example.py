@@ -1,7 +1,7 @@
 import requests
 
-upload_url = 'url-of-api/upload-file'
-review_url = 'url-of-api/review'
+upload_url = 'http://127.0.0.1:5000/upload-file'
+review_url = 'http://127.0.0.1:5000/review'
 
 def upload_file(file_path):
     with open(file_path, 'rb') as file:
